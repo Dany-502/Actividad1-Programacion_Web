@@ -2,9 +2,13 @@
 
 # Autores
 -- Nombre: _Rodriguez Juarez Jose Daniel_
+
 -- No.Control: 22161222
+
 -- Materia: Programación Web
+
 -- Grupo: 7SC
+
 -- Docente: Martinez Nieto Adelina
 
 # Descripcion 
