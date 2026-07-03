@@ -1,272 +1,31 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actividad 1 - Programación Web | Portafolio de Ejercicios</title>
-    <!-- Google Fonts: Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg-page: #0f172a;
-            --bg-card: #1e293b;
-            --border-card: #334155;
-            --text-primary: #f8fafc;
-            --text-secondary: #94a3b8;
-            --primary-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
-            --accent-glow: rgba(99, 102, 241, 0.15);
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg-page);
-            color: var(--text-primary);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 60px 20px;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 50px;
-            max-width: 800px;
-            width: 100%;
-        }
-
-        header h1 {
-            font-size: 38px;
-            font-weight: 800;
-            background: var(--primary-gradient);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 12px;
-            letter-spacing: -0.025em;
-        }
-
-        header p {
-            color: var(--text-secondary);
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 1200px;
-            width: 100%;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 24px;
-        }
-
-        .card {
-            background-color: var(--bg-card);
-            border: 1px solid var(--border-card);
-            border-radius: 16px;
-            padding: 24px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            position: relative;
-            overflow: hidden;
-            text-decoration: none;
-            color: inherit;
-        }
-
-        .card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: var(--primary-gradient);
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            z-index: 1;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            border-color: #6366f1;
-            box-shadow: 0 10px 25px var(--accent-glow);
-        }
-
-        .card-content {
-            position: relative;
-            z-index: 2;
-        }
-
-        .card-number {
-            font-size: 12px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            background: var(--primary-gradient);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 12px;
-            display: inline-block;
-        }
-
-        .card-title {
-            font-size: 18px;
-            font-weight: 700;
-            margin-bottom: 8px;
-            line-height: 1.4;
-        }
-
-        .card-description {
-            color: var(--text-secondary);
-            font-size: 14px;
-            line-height: 1.5;
-            margin-bottom: 20px;
-        }
-
-        .card-badge {
-            display: inline-block;
-            font-size: 11px;
-            font-weight: 500;
-            padding: 4px 10px;
-            background-color: rgba(99, 102, 241, 0.1);
-            color: #818cf8;
-            border-radius: 12px;
-            border: 1px solid rgba(99, 102, 241, 0.2);
-            align-self: flex-start;
-        }
-
-        footer {
-            margin-top: 80px;
-            text-align: center;
-            color: var(--text-secondary);
-            font-size: 14px;
-            border-top: 1px solid var(--border-card);
-            padding-top: 24px;
-            width: 100%;
-            max-width: 1200px;
-        }
-    </style>
+    <title>Indice de ejercicios</title>
+    <link rel="stylesheet" href="css/ejercicio10.css">
 </head>
+
 <body>
-
-    <header>
-        <h1>Mis Ejercicios - Actividad 1</h1>
-        <p>Portafolio de prácticas de Programación Web. Todos los ejercicios están integrados en este índice interactivo publicado en GitHub Pages.</p>
-    </header>
-
-    <main class="container">
-        <!-- Ejercicio 1 -->
-        <a href="ejercicio1.html" class="card">
-            <div class="card-content">
-                <span class="card-number">Ejercicio 01</span>
-                <h2 class="card-title">Hola Mundo</h2>
-                <p class="card-description">Nuestra primera página en HTML básica con saludos estructurados.</p>
-            </div>
-            <span class="card-badge">Estructura HTML</span>
-        </a>
-
-        <!-- Ejercicio 2 -->
-        <a href="ejercicio2.html" class="card">
-            <div class="card-content">
-                <span class="card-number">Ejercicio 02</span>
-                <h2 class="card-title">Formatos de Texto</h2>
-                <p class="card-description">Estilos de texto, uso de negritas, cursivas, párrafos y encabezados.</p>
-            </div>
-            <span class="card-badge">Formato de Texto</span>
-        </a>
-
-        <!-- Ejercicio 3 -->
-        <a href="ejercicio3.html" class="card">
-            <div class="card-content">
-                <span class="card-number">Ejercicio 03</span>
-                <h2 class="card-title">Listas en HTML</h2>
-                <p class="card-description">Práctica con listas ordenadas, desordenadas y anidadas.</p>
-            </div>
-            <span class="card-badge">Listas HTML</span>
-        </a>
-
-        <!-- Ejercicio 4 -->
-        <a href="ejercicio4.html" class="card">
-            <div class="card-content">
-                <span class="card-number">Ejercicio 04</span>
-                <h2 class="card-title">Inserción de Imágenes</h2>
-                <p class="card-description">Inserción de imágenes locales con dimensiones y textos alternativos.</p>
-            </div>
-            <span class="card-badge">Contenido Multimedia</span>
-        </a>
-
-        <!-- Ejercicio 5 -->
-        <a href="ejercicio5.html" class="card">
-            <div class="card-content">
-                <span class="card-number">Ejercicio 05</span>
-                <h2 class="card-title">Integración General</h2>
-                <p class="card-description">Página web combinando imágenes, links de GitHub, títulos y texto enfatizado.</p>
-            </div>
-            <span class="card-badge">Integración</span>
-        </a>
-
-        <!-- Ejercicio 6 -->
-        <a href="ejercicio6.html" class="card">
-            <div class="card-content">
-                <span class="card-number">Ejercicio 06</span>
-                <h2 class="card-title">Secciones y Semántica</h2>
-                <p class="card-description">Uso de etiquetas semánticas y la maquetación del esqueleto del sitio.</p>
-            </div>
-            <span class="card-badge">HTML5 Semántico</span>
-        </a>
-
-        <!-- Ejercicio 7 -->
-        <a href="ejercicio7.html" class="card">
-            <div class="card-content">
-                <span class="card-number">Ejercicio 07</span>
-                <h2 class="card-title">Receta: Tacos al Pastor</h2>
-                <p class="card-description">Maquetación semántica estructurando una receta de cocina típica.</p>
-            </div>
-            <span class="card-badge">Semántica y Listas</span>
-        </a>
-
-        <!-- Ejercicio 8 -->
-        <a href="ejercicio8.html" class="card">
-            <div class="card-content">
-                <span class="card-number">Ejercicio 08</span>
-                <h2 class="card-title">Horario Escolar</h2>
-                <p class="card-description">Creación de tablas complejas representando el horario de clases escolar.</p>
-            </div>
-            <span class="card-badge">Tablas HTML</span>
-        </a>
-
-        <!-- Ejercicio 9 -->
-        <a href="ejercicio9.html" class="card">
-            <div class="card-content">
-                <span class="card-number">Ejercicio 09</span>
-                <h2 class="card-title">Formulario de Contacto</h2>
-                <p class="card-description">Diseño y estructuración de un formulario de contacto responsivo con CSS.</p>
-            </div>
-            <span class="card-badge">Formularios y CSS</span>
-        </a>
-
-        <!-- Ejercicio 10 -->
-        <a href="ejercicio10.html" class="card">
-            <div class="card-content">
-                <span class="card-number">Ejercicio 10</span>
-                <h2 class="card-title">Calculadora Celsius a Fahrenheit</h2>
-                <p class="card-description">Conversor interactivo de grados usando entrada de datos y JavaScript.</p>
-            </div>
-            <span class="card-badge">Interacción y JS</span>
-        </a>
-    </main>
-
-    <footer>
-        <p>Publicado por Dany-502 &copy; 2026</p>
-    </footer>
+    <div class="contenedor-formulario">
+        <h1>Ejercicios: Actividad 1 Tema 2</h1>
+        <hr>
+        <h2>Elaborado por: Rodriguez Juarez Jose Daniel</h2>
+        <br>
+        <button type="button" onclick="window.location.href='ejercicio1.html'">Ejercicio 1</button>
+        <button type="button" onclick="window.location.href='ejercicio2.html'">Ejercicio 2</button>
+        <button type="button" onclick="window.location.href='ejercicio3.html'">Ejercicio 3</button>
+        <button type="button" onclick="window.location.href='ejercicio4.html'">Ejercicio 4</button>
+        <button type="button" onclick="window.location.href='ejercicio5.html'">Ejercicio 5</button>
+        <button type="button" onclick="window.location.href='ejercicio6.html'">Ejercicio 6</button>
+        <button type="button" onclick="window.location.href='ejercicio7.html'">Ejercicio 7</button>
+        <button type="button" onclick="window.location.href='ejercicio8.html'">Ejercicio 8</button>
+        <button type="button" onclick="window.location.href='ejercicio9.html'">Ejercicio 9</button>
+        <button type="button" onclick="window.location.href='ejercicio10.html'">Ejercicio 10</button>
+    </div>
 
 </body>
+
 </html>
