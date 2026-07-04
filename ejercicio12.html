@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12: Calculadora de Propinas</title>
+    <script src="js/ejercicio12.js"></script>
+    <link rel="stylesheet" href="css/ejercicio12.css">
+</head>
+
+<body>
+    <div class="contenedor-formulario">
+        <h1>Convertidor de pesos Mexicanos(MXN) a dolares (Estadounidenses)(USD)</h1>
+        <hr>
+        <div class="grupo-formulario">
+            <label for="pesos">Ingrese la cantidad en pesos Mexicanos</label>
+            <input type="number" id="pesos" placeholder="Ej.100" required min="1">
+        </div>
+        <button type="button" onclick="convertir()">Convertir</button>
+        <div class="grupo-formulario">
+            <label for="resultado">Dolares Estadounidenses: </label>
+            <textarea readonly id="resultado" placeholder="Resultado"></textarea>
+        </div>
+    </div>
+</body>
+
+</html>

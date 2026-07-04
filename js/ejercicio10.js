@@ -1,7 +1,7 @@
 function conversion() {
-    var celsiusInput = document.getElementById("celsius").value;
+    var Celsius = document.getElementById("celsius").value;
 
-    if (celsiusInput === "") {
+    if (Celsius === "" || Celsius != 0) {
         alert("Por favor, ingresa un valor en grados Celsius.");
         return;
     }

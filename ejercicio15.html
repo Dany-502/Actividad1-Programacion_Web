@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 15: Calculadora de promedios</title>
+    <script src="js/ejercicio15.js"></script>
+    <link rel="stylesheet" href="css/ejercicio13.css">
+</head>
+
+<body>
+    <div class="contenedor-formulario">
+        <h1>Calculadora de promedios</h1>
+        <div class="grupo-formulario">
+            <label for="nombre_estudiante">Ingrese el nombre del estudiante</label>
+            <input type="text" id="nombre_estudiante" placeholder="Nombre del estudiante" required>
+            <br>
+            <br>
+            <label for="calificacion">Ingrese la calificación del estudiante:</label>
+            <input type="number" id="calificacion" placeholder="Calificación" required>
+        </div>|
+        <button type="button" onclick="agregarAlumno()">Agregar estudiante</button>
+        <button type="button" onclick="calcular()">Calcular</button>
+        <div class="grupo-formulario">
+            <label for="promedio">Promedio de las calificaciones</label>
+            <textarea readonly id="promedio"></textarea>
+            <label for="calificacionAlta">Calificación mas alta</label>
+            <textarea readonly id="calificacionAlta"></textarea>
+            <label for="calificacionBaja">Calificación mas baja</label>
+            <textarea readonly id="calificacionBaja"></textarea>
+        </div>
+    </div>
+
+</body>
+
+</html>
