@@ -1,4 +1,4 @@
-# Ejercicios 1 - 10: Actividad 1 - Tema 2
+# Ejercicios 1 - 18: Actividad 1 - Tema 2
 
 # Autores
 -- Nombre: _Rodriguez Juarez Jose Daniel_
@@ -35,3 +35,18 @@ Ejercicios realizados en clase para comprender las funciones de HTML, CSS y Java
 
 ● Ejercicio 10: Calculadora convertidora de grados Celsius a Farenhein utilizando HTML,CSS y JavaScript.
 
+● Ejercicio 11: Convertidor de Kilometros a Millas.
+
+● Ejercicio 12: Calculadora de Propinas y Convertidor de pesos a dolares.
+
+● Ejercicio 13: Verificador de elegibilidad para votar en base a la edad.
+
+● Ejercicio 14: Calculadora de arreglos.
+
+● Ejercicio 15: Calculadora de promedios.
+
+● Ejercicio 16: Calculadora de operaciones basicas.
+
+● Ejercicio 17: Gestión de Tareas Pendientes con JSON.
+
+● Ejercicio 18: Manipulación del DOM.
